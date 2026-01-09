@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  # Frontend Shell Application
+  shell-app:
+    build:
+      context: ./financial-dashboard-nx
+      dockerfile: ../deployment/docker/shell.Dockerfile
+    ports:
+      - "4200:80"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./financial-dashboard-nx/apps/shell:/app/shell
+      - ./design-system:/app/design-system
+      - ./shared-types:/app/shared-types
+    depends_on:
+      - mock-api
+
+  # Mock API Server for Development
+  mock-api:
+    build:
+      context: ./mock-data
+      dockerfile: ../deployment/docker/mock-api.Dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./mock-data:/app/data
+    environment:
+      - PORT=3001
+
+  # Storybook for Design System
+  storybook:
+    build:
+      context: ./design-system
+      dockerfile: ../deployment/docker/storybook.Dockerfile
+    ports:
+      - "6006:6006"
+    volumes:
+      - ./design-system:/app/design-system
+      - ./shared-types:/app/shared-types
+
+networks:
+  default:
+    name: financial-frontend-network

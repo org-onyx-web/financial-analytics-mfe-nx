@@ -1,0 +1,134 @@
+[
+  {
+    "id": "portfolio_1",
+    "userId": "user_123",
+    "name": "Growth Portfolio",
+    "description": "Long-term growth focused portfolio",
+    "totalValue": 125750.00,
+    "dayChange": 2340.50,
+    "dayChangePercent": 1.90,
+    "holdings": [
+      {
+        "id": "holding_1",
+        "symbol": "AAPL",
+        "companyName": "Apple Inc.",
+        "shares": 50,
+        "currentPrice": 185.25,
+        "totalValue": 9262.50,
+        "costBasis": 8750.00,
+        "unrealizedGain": 512.50,
+        "unrealizedGainPercent": 5.86,
+        "sector": "Technology",
+        "lastUpdated": "2026-01-09T14:30:00Z"
+      },
+      {
+        "id": "holding_2",
+        "symbol": "MSFT",
+        "companyName": "Microsoft Corporation",
+        "shares": 30,
+        "currentPrice": 420.80,
+        "totalValue": 12624.00,
+        "costBasis": 11400.00,
+        "unrealizedGain": 1224.00,
+        "unrealizedGainPercent": 10.74,
+        "sector": "Technology",
+        "lastUpdated": "2026-01-09T14:30:00Z"
+      },
+      {
+        "id": "holding_3",
+        "symbol": "GOOGL",
+        "companyName": "Alphabet Inc.",
+        "shares": 25,
+        "currentPrice": 145.60,
+        "totalValue": 3640.00,
+        "costBasis": 3500.00,
+        "unrealizedGain": 140.00,
+        "unrealizedGainPercent": 4.00,
+        "sector": "Technology",
+        "lastUpdated": "2026-01-09T14:30:00Z"
+      },
+      {
+        "id": "holding_4",
+        "symbol": "TSLA",
+        "companyName": "Tesla, Inc.",
+        "shares": 40,
+        "currentPrice": 275.30,
+        "totalValue": 11012.00,
+        "costBasis": 12000.00,
+        "unrealizedGain": -988.00,
+        "unrealizedGainPercent": -8.23,
+        "sector": "Consumer Cyclical",
+        "lastUpdated": "2026-01-09T14:30:00Z"
+      }
+    ],
+    "performance": [
+      {
+        "date": "2026-01-08",
+        "value": 123409.50,
+        "return": 1234.50,
+        "returnPercent": 1.01
+      },
+      {
+        "date": "2026-01-09",
+        "value": 125750.00,
+        "return": 2340.50,
+        "returnPercent": 1.90
+      }
+    ],
+    "createdAt": "2025-06-15T10:00:00Z",
+    "updatedAt": "2026-01-09T14:30:00Z"
+  },
+  {
+    "id": "portfolio_2",
+    "userId": "user_123",
+    "name": "Dividend Income",
+    "description": "Dividend-focused income portfolio",
+    "totalValue": 85340.75,
+    "dayChange": -145.25,
+    "dayChangePercent": -0.17,
+    "holdings": [
+      {
+        "id": "holding_5",
+        "symbol": "JNJ",
+        "companyName": "Johnson & Johnson",
+        "shares": 100,
+        "currentPrice": 165.40,
+        "totalValue": 16540.00,
+        "costBasis": 16000.00,
+        "unrealizedGain": 540.00,
+        "unrealizedGainPercent": 3.38,
+        "sector": "Healthcare",
+        "lastUpdated": "2026-01-09T14:30:00Z"
+      },
+      {
+        "id": "holding_6",
+        "symbol": "PG",
+        "companyName": "Procter & Gamble Co.",
+        "shares": 80,
+        "currentPrice": 142.85,
+        "totalValue": 11428.00,
+        "costBasis": 11200.00,
+        "unrealizedGain": 228.00,
+        "unrealizedGainPercent": 2.04,
+        "sector": "Consumer Defensive",
+        "lastUpdated": "2026-01-09T14:30:00Z"
+      }
+    ],
+    "performance": [
+      {
+        "date": "2026-01-08",
+        "value": 85486.00,
+        "return": 120.50,
+        "returnPercent": 0.14
+      },
+      {
+        "date": "2026-01-09",
+        "value": 85340.75,
+        "return": -145.25,
+        "returnPercent": -0.17
+      }
+    ],
+    "createdAt": "2025-08-20T10:00:00Z",
+    "updatedAt": "2026-01-09T14:30:00Z"
+  }
+]
